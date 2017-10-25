@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=us-ascii" />
+  <meta name="description" content="mirai on a map">
+  <meta name="robots" content="index, nofollow">
+  <title>Mirai on map</title>
+  <link href="css/mirai.css" rel="stylesheet" type="text/css" />
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script type="text/javascript" src="src/jquery.mousewheel.js"></script>
+
+
+  <script type="text/javascript" src="src/timeline/timeline-ajax/simile-ajax-api.js"></script>
+  <script type="text/javascript" src="src/timeline/timeline-js/timeline-api.js"></script>
+
+  <script type="text/javascript" src="src/markerclusterer.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSgbP6kxQmArz4weP2Xo9fnN21o733zVo"></script>
+  <script type="text/javascript" src="src/timemap.js"></script>
+  <script type="text/javascript" src="src/onload.js"></script>
+</head>
+
+<body>
+ <div id="timemap">
+  <div id="tl-height-handle" class="cursor-hand"></div>
+  <div id="timeline-container">
+   <div id="tl-middle-line"></div>
+
+   <div id="tl-shadow-top" class="drop-shadow-top"></div>
+   <div id="tl-zoom">
+    <div id="tl-zoom-in" title="Zoom in"></div>
+    <div id="tl-zoom-out" title="Zoom out"></div>
+   </div>
+   <div id="timeline"></div>
+   <div id="tl-shadow-bottom" class="drop-shadow-bottom"></div>
+  </div><!--end of timeline-container --> 
+  <div id="map-container">
+   <div id="map"></div>
+  </div>
+  </div><!-- end timemap -->
+</body>
+</html>
